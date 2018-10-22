@@ -1,2 +1,2 @@
 # hackademy
-This is my course repository
+This is my course repository hackademy
