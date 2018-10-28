@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.7.0 on darwin)" generated="20181028 22:21:09.339">
+<suite id="s1" name="Homework 01" source="/Users/Julia/eclipse-workspace/First_robot_project/homework_01.robot">
+<test id="s1-t1" name="Homework Test">
+<kw name="Get Value From User" library="Dialogs">
+<doc>Pauses test execution and asks user to input a value.</doc>
+<arguments>
+<arg>Write the input:</arg>
+</arguments>
+<assign>
+<var>${input}</var>
+</assign>
+<msg timestamp="20181028 22:21:15.526" level="INFO">${input} = Martin</msg>
+<status status="PASS" starttime="20181028 22:21:09.442" endtime="20181028 22:21:15.526"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${input}</arg>
+<arg>${initial_variable}</arg>
+</arguments>
+<status status="PASS" starttime="20181028 22:21:15.527" endtime="20181028 22:21:15.529"></status>
+</kw>
+<status status="PASS" starttime="20181028 22:21:09.441" endtime="20181028 22:21:15.530" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20181028 22:21:09.342" endtime="20181028 22:21:15.531"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Homework 01">Homework 01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
