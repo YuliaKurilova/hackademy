@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.7.0 on darwin)" generated="20181104 19:55:03.487">
+<suite id="s1" name="Workshop 3" source="/Users/Julia/eclipse-workspace/workshop_3">
+<suite id="s1-s1" name="Class 3" source="/Users/Julia/eclipse-workspace/workshop_3/class_3.robot">
+<test id="s1-s1-t1" name="Mahara Invailid Login">
+<kw name="Open Browser To Mahara" library="Mahara_keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://demo.mahara.org</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20181104 19:55:03.745" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181104 19:55:03.762" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20181104 19:55:03.761" endtime="20181104 19:55:03.763"></status>
+</kw>
+<msg timestamp="20181104 19:55:03.770" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</msg>
+<status status="FAIL" starttime="20181104 19:55:03.745" endtime="20181104 19:55:03.771"></status>
+</kw>
+<status status="FAIL" starttime="20181104 19:55:03.744" endtime="20181104 19:55:03.772"></status>
+</kw>
+<kw name="Capture Screenshot and Close Browser" library="Mahara_keywords" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181104 19:55:03.774" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20181104 19:55:03.774" endtime="20181104 19:55:03.775"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181104 19:55:03.775" endtime="20181104 19:55:03.776"></status>
+</kw>
+<status status="PASS" starttime="20181104 19:55:03.772" endtime="20181104 19:55:03.776"></status>
+</kw>
+<status status="FAIL" starttime="20181104 19:55:03.743" endtime="20181104 19:55:03.777" critical="yes">Setup failed:
+WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</test>
+<test id="s1-s1-t2" name="Mahara Admin Login">
+<kw name="Open Browser To Mahara" library="Mahara_keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://demo.mahara.org</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20181104 19:55:03.781" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181104 19:55:03.792" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20181104 19:55:03.790" endtime="20181104 19:55:03.792"></status>
+</kw>
+<msg timestamp="20181104 19:55:03.793" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</msg>
+<status status="FAIL" starttime="20181104 19:55:03.780" endtime="20181104 19:55:03.794"></status>
+</kw>
+<status status="FAIL" starttime="20181104 19:55:03.779" endtime="20181104 19:55:03.795"></status>
+</kw>
+<kw name="Capture Screenshot and Close Browser" library="Mahara_keywords" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181104 19:55:03.797" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20181104 19:55:03.796" endtime="20181104 19:55:03.798"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181104 19:55:03.799" endtime="20181104 19:55:03.799"></status>
+</kw>
+<status status="PASS" starttime="20181104 19:55:03.796" endtime="20181104 19:55:03.800"></status>
+</kw>
+<status status="FAIL" starttime="20181104 19:55:03.778" endtime="20181104 19:55:03.801" critical="yes">Setup failed:
+WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</test>
+<status status="FAIL" starttime="20181104 19:55:03.572" endtime="20181104 19:55:03.803"></status>
+</suite>
+<status status="FAIL" starttime="20181104 19:55:03.536" endtime="20181104 19:55:03.808"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2">Critical Tests</stat>
+<stat pass="0" fail="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" id="s1" name="Workshop 3">Workshop 3</stat>
+<stat pass="0" fail="2" id="s1-s1" name="Class 3">Workshop 3.Class 3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,24 @@
+*** Settings ***
+Library    SeleniumLibrary    
+*** Keywords ***
+Open Browser To Mahara
+    Open Browser    https://demo.mahara.org    chrome
+#    Maximize Browser Window
+    
+Login To Mahara
+    [Arguments]    ${uname}    ${pwd}
+    Input Text    id=login_login_username    ${uname}  
+    Input Password    name=login_password    ${pwd} 
+    Click Button    Login
+    
+Capture Screenshot and Close Browser
+    Capture Page Screenshot    
+    Close Browser
+
+Mahara Admin Login
+    [Arguments]    ${uname}    ${pwd}
+    Open Browser To Mahara
+    Login To Mahara   ${uname}    ${pwd}
+    Wait Until Page Contains Element    xpath=//a[@class="user-icon"]
+    Page Should Contain Link    https://demo.mahara.org/user/james-jetts    
+    Close Browser

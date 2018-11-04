@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.7.0 on darwin)" generated="20181104 21:40:32.993">
+<suite id="s1" name="Hw 3" source="/Users/Julia/eclipse-workspace/homework_3/hw_3.robot">
+<test id="s1-t1" name="Mahara Admin Login Template Test Case">
+<kw name="Mahara Admin Login" library="Mahara_keywords">
+<arguments>
+<arg>admin</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Open Browser To Mahara" library="Mahara_keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://demo.mahara.org</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20181104 21:40:33.190" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org'.</msg>
+<status status="PASS" starttime="20181104 21:40:33.190" endtime="20181104 21:40:43.818"></status>
+</kw>
+<status status="PASS" starttime="20181104 21:40:33.190" endtime="20181104 21:40:43.819"></status>
+</kw>
+<kw name="Login To Mahara" library="Mahara_keywords">
+<arguments>
+<arg>${uname}</arg>
+<arg>${pwd}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_login_username</arg>
+<arg>${uname}</arg>
+</arguments>
+<msg timestamp="20181104 21:40:43.822" level="INFO">Typing text 'admin' into text field 'id=login_login_username'.</msg>
+<status status="PASS" starttime="20181104 21:40:43.821" endtime="20181104 21:40:43.972"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=login_password</arg>
+<arg>${pwd}</arg>
+</arguments>
+<msg timestamp="20181104 21:40:43.974" level="INFO">Typing password into text field 'name=login_password'.</msg>
+<status status="PASS" starttime="20181104 21:40:43.973" endtime="20181104 21:40:44.108"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<msg timestamp="20181104 21:40:44.109" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20181104 21:40:44.109" endtime="20181104 21:40:47.917"></status>
+</kw>
+<status status="PASS" starttime="20181104 21:40:43.820" endtime="20181104 21:40:47.917"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//a[@class="user-icon"]</arg>
+</arguments>
+<status status="PASS" starttime="20181104 21:40:47.917" endtime="20181104 21:40:47.935"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>https://demo.mahara.org/user/james-jetts</arg>
+</arguments>
+<msg timestamp="20181104 21:40:47.955" level="INFO">Current page contains link 'https://demo.mahara.org/user/james-jetts'.</msg>
+<status status="PASS" starttime="20181104 21:40:47.936" endtime="20181104 21:40:47.956"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181104 21:40:47.956" endtime="20181104 21:40:48.043"></status>
+</kw>
+<status status="PASS" starttime="20181104 21:40:33.188" endtime="20181104 21:40:48.044"></status>
+</kw>
+<kw name="Mahara Admin Login" library="Mahara_keywords">
+<arguments>
+<arg>student</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Open Browser To Mahara" library="Mahara_keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://demo.mahara.org</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20181104 21:40:48.048" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org'.</msg>
+<status status="PASS" starttime="20181104 21:40:48.047" endtime="20181104 21:40:58.155"></status>
+</kw>
+<status status="PASS" starttime="20181104 21:40:48.046" endtime="20181104 21:40:58.156"></status>
+</kw>
+<kw name="Login To Mahara" library="Mahara_keywords">
+<arguments>
+<arg>${uname}</arg>
+<arg>${pwd}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_login_username</arg>
+<arg>${uname}</arg>
+</arguments>
+<msg timestamp="20181104 21:40:58.161" level="INFO">Typing text 'student' into text field 'id=login_login_username'.</msg>
+<status status="PASS" starttime="20181104 21:40:58.160" endtime="20181104 21:40:58.330"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=login_password</arg>
+<arg>${pwd}</arg>
+</arguments>
+<msg timestamp="20181104 21:40:58.331" level="INFO">Typing password into text field 'name=login_password'.</msg>
+<status status="PASS" starttime="20181104 21:40:58.330" endtime="20181104 21:40:58.464"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<msg timestamp="20181104 21:40:58.464" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20181104 21:40:58.464" endtime="20181104 21:41:03.223"></status>
+</kw>
+<status status="PASS" starttime="20181104 21:40:58.157" endtime="20181104 21:41:03.224"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//a[@class="user-icon"]</arg>
+</arguments>
+<status status="PASS" starttime="20181104 21:41:03.224" endtime="20181104 21:41:03.241"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>https://demo.mahara.org/user/james-jetts</arg>
+</arguments>
+<msg timestamp="20181104 21:41:03.262" level="INFO">Current page contains link 'https://demo.mahara.org/user/james-jetts'.</msg>
+<status status="PASS" starttime="20181104 21:41:03.242" endtime="20181104 21:41:03.262"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181104 21:41:03.262" endtime="20181104 21:41:03.344"></status>
+</kw>
+<status status="PASS" starttime="20181104 21:40:48.045" endtime="20181104 21:41:03.345"></status>
+</kw>
+<kw name="Mahara Admin Login" library="Mahara_keywords">
+<arguments>
+<arg>learner</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Open Browser To Mahara" library="Mahara_keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://demo.mahara.org</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20181104 21:41:03.347" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org'.</msg>
+<status status="PASS" starttime="20181104 21:41:03.347" endtime="20181104 21:41:14.028"></status>
+</kw>
+<status status="PASS" starttime="20181104 21:41:03.347" endtime="20181104 21:41:14.029"></status>
+</kw>
+<kw name="Login To Mahara" library="Mahara_keywords">
+<arguments>
+<arg>${uname}</arg>
+<arg>${pwd}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_login_username</arg>
+<arg>${uname}</arg>
+</arguments>
+<msg timestamp="20181104 21:41:14.032" level="INFO">Typing text 'learner' into text field 'id=login_login_username'.</msg>
+<status status="PASS" starttime="20181104 21:41:14.031" endtime="20181104 21:41:14.202"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=login_password</arg>
+<arg>${pwd}</arg>
+</arguments>
+<msg timestamp="20181104 21:41:14.203" level="INFO">Typing password into text field 'name=login_password'.</msg>
+<status status="PASS" starttime="20181104 21:41:14.202" endtime="20181104 21:41:14.336"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<msg timestamp="20181104 21:41:14.337" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20181104 21:41:14.336" endtime="20181104 21:41:18.227"></status>
+</kw>
+<status status="PASS" starttime="20181104 21:41:14.030" endtime="20181104 21:41:18.228"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//a[@class="user-icon"]</arg>
+</arguments>
+<status status="PASS" starttime="20181104 21:41:18.228" endtime="20181104 21:41:18.246"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>https://demo.mahara.org/user/james-jetts</arg>
+</arguments>
+<msg timestamp="20181104 21:41:18.266" level="INFO">Current page contains link 'https://demo.mahara.org/user/james-jetts'.</msg>
+<status status="PASS" starttime="20181104 21:41:18.246" endtime="20181104 21:41:18.266"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181104 21:41:18.266" endtime="20181104 21:41:18.404"></status>
+</kw>
+<status status="PASS" starttime="20181104 21:41:03.346" endtime="20181104 21:41:18.404"></status>
+</kw>
+<kw name="Mahara Admin Login" library="Mahara_keywords">
+<arguments>
+<arg>staff</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Open Browser To Mahara" library="Mahara_keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://demo.mahara.org</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20181104 21:41:18.407" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org'.</msg>
+<status status="PASS" starttime="20181104 21:41:18.407" endtime="20181104 21:41:29.078"></status>
+</kw>
+<status status="PASS" starttime="20181104 21:41:18.406" endtime="20181104 21:41:29.078"></status>
+</kw>
+<kw name="Login To Mahara" library="Mahara_keywords">
+<arguments>
+<arg>${uname}</arg>
+<arg>${pwd}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_login_username</arg>
+<arg>${uname}</arg>
+</arguments>
+<msg timestamp="20181104 21:41:29.079" level="INFO">Typing text 'staff' into text field 'id=login_login_username'.</msg>
+<status status="PASS" starttime="20181104 21:41:29.079" endtime="20181104 21:41:29.237"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=login_password</arg>
+<arg>${pwd}</arg>
+</arguments>
+<msg timestamp="20181104 21:41:29.237" level="INFO">Typing password into text field 'name=login_password'.</msg>
+<status status="PASS" starttime="20181104 21:41:29.237" endtime="20181104 21:41:29.378"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<msg timestamp="20181104 21:41:29.379" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20181104 21:41:29.379" endtime="20181104 21:41:32.859"></status>
+</kw>
+<status status="PASS" starttime="20181104 21:41:29.079" endtime="20181104 21:41:32.860"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//a[@class="user-icon"]</arg>
+</arguments>
+<status status="PASS" starttime="20181104 21:41:32.860" endtime="20181104 21:41:32.879"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>https://demo.mahara.org/user/james-jetts</arg>
+</arguments>
+<msg timestamp="20181104 21:41:32.899" level="INFO">Current page contains link 'https://demo.mahara.org/user/james-jetts'.</msg>
+<status status="PASS" starttime="20181104 21:41:32.879" endtime="20181104 21:41:32.899"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181104 21:41:32.900" endtime="20181104 21:41:32.984"></status>
+</kw>
+<status status="PASS" starttime="20181104 21:41:18.405" endtime="20181104 21:41:32.984"></status>
+</kw>
+<kw name="Mahara Admin Login" library="Mahara_keywords">
+<arguments>
+<arg>sitestaff</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Open Browser To Mahara" library="Mahara_keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://demo.mahara.org</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20181104 21:41:32.988" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org'.</msg>
+<status status="PASS" starttime="20181104 21:41:32.988" endtime="20181104 21:41:44.132"></status>
+</kw>
+<status status="PASS" starttime="20181104 21:41:32.987" endtime="20181104 21:41:44.132"></status>
+</kw>
+<kw name="Login To Mahara" library="Mahara_keywords">
+<arguments>
+<arg>${uname}</arg>
+<arg>${pwd}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_login_username</arg>
+<arg>${uname}</arg>
+</arguments>
+<msg timestamp="20181104 21:41:44.134" level="INFO">Typing text 'sitestaff' into text field 'id=login_login_username'.</msg>
+<status status="PASS" starttime="20181104 21:41:44.134" endtime="20181104 21:41:44.295"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=login_password</arg>
+<arg>${pwd}</arg>
+</arguments>
+<msg timestamp="20181104 21:41:44.295" level="INFO">Typing password into text field 'name=login_password'.</msg>
+<status status="PASS" starttime="20181104 21:41:44.295" endtime="20181104 21:41:44.445"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<msg timestamp="20181104 21:41:44.446" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20181104 21:41:44.445" endtime="20181104 21:41:49.010"></status>
+</kw>
+<status status="PASS" starttime="20181104 21:41:44.133" endtime="20181104 21:41:49.011"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//a[@class="user-icon"]</arg>
+</arguments>
+<status status="PASS" starttime="20181104 21:41:49.011" endtime="20181104 21:41:49.031"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>https://demo.mahara.org/user/james-jetts</arg>
+</arguments>
+<msg timestamp="20181104 21:41:49.055" level="INFO">Current page contains link 'https://demo.mahara.org/user/james-jetts'.</msg>
+<status status="PASS" starttime="20181104 21:41:49.031" endtime="20181104 21:41:49.055"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181104 21:41:49.055" endtime="20181104 21:41:49.136"></status>
+</kw>
+<status status="PASS" starttime="20181104 21:41:32.986" endtime="20181104 21:41:49.136"></status>
+</kw>
+<status status="PASS" starttime="20181104 21:40:33.188" endtime="20181104 21:41:49.138" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20181104 21:40:32.995" endtime="20181104 21:41:49.140"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Hw 3">Hw 3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
