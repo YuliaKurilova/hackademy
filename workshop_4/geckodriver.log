@@ -1,0 +1,21 @@
+1542564293772	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/32/1phbwncd4xl4jdkpkkbb9lk00000gn/T/rust_mozprofile.XLY0ODp6uh4c"
+1542564297155	Marionette	INFO	Listening on port 51552
+1542564297172	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542564308884	Marionette	INFO	Stopped listening on port 51552
+1542564447670	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/32/1phbwncd4xl4jdkpkkbb9lk00000gn/T/rust_mozprofile.7JjJXyVfNXnT"
+1542564449830	Marionette	INFO	Listening on port 51627
+1542564449925	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542564463356	Marionette	INFO	Stopped listening on port 51627
+1542564527695	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/32/1phbwncd4xl4jdkpkkbb9lk00000gn/T/rust_mozprofile.Bczw4zCn2DID"
+1542564530042	Marionette	INFO	Listening on port 51682
+1542564530186	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 2709: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIAutoCompleteController.getStyleAt]
+1542564540899	Marionette	INFO	Stopped listening on port 51682
+1542564592602	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/32/1phbwncd4xl4jdkpkkbb9lk00000gn/T/rust_mozprofile.DBCUFZPcDkoY"
+1542564594754	Marionette	INFO	Listening on port 51749
+1542564594784	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542564599980	Marionette	INFO	Stopped listening on port 51749
+1542565469374	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/32/1phbwncd4xl4jdkpkkbb9lk00000gn/T/rust_mozprofile.4aVAUoz57IF3"
+1542565471618	Marionette	INFO	Listening on port 52248
+1542565471631	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542565477217	Marionette	INFO	Stopped listening on port 52248
