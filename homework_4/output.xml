@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.7.0 on darwin)" generated="20181118 21:55:58.978">
+<suite id="s1" name="Homework 4" source="/Users/Julia/hackademy/homework_4">
+<suite id="s1-s1" name="Eshop women" source="/Users/Julia/hackademy/homework_4/Eshop_women.robot">
+<test id="s1-s1-t1" name="Test women filters and sorts">
+<kw name="Open Browser" library="SeleniumLibrary" type="setup">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20181118 21:55:59.467" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20181118 21:55:59.467" endtime="20181118 21:56:07.801"></status>
+</kw>
+<kw name="Go to women category" library="Eshop_keywords">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${link_women_category}</arg>
+</arguments>
+<msg timestamp="20181118 21:56:07.806" level="INFO">Clicking link 'class=sf-with-ul'.</msg>
+<status status="PASS" starttime="20181118 21:56:07.805" endtime="20181118 21:56:09.550"></status>
+</kw>
+<status status="PASS" starttime="20181118 21:56:07.804" endtime="20181118 21:56:09.551"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${checkbox_size_m}</arg>
+</arguments>
+<status status="PASS" starttime="20181118 21:56:09.552" endtime="20181118 21:56:09.572"></status>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>${checkbox_size_m}</arg>
+</arguments>
+<msg timestamp="20181118 21:56:09.574" level="INFO">Selecting checkbox 'id=layered_id_attribute_group_2'.</msg>
+<status status="PASS" starttime="20181118 21:56:09.573" endtime="20181118 21:56:09.688"></status>
+</kw>
+<kw name="Click color filter button" library="Eshop_keywords">
+<arguments>
+<arg>${checkbox_color_black}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${filter}</arg>
+</arguments>
+<status status="PASS" starttime="20181118 21:56:09.690" endtime="20181118 21:56:09.709"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${filter}</arg>
+</arguments>
+<msg timestamp="20181118 21:56:09.710" level="INFO">Clicking button 'id=layered_id_attribute_group_11'.</msg>
+<status status="PASS" starttime="20181118 21:56:09.709" endtime="20181118 21:56:09.810"></status>
+</kw>
+<status status="PASS" starttime="20181118 21:56:09.689" endtime="20181118 21:56:09.810"></status>
+</kw>
+<kw name="Click color filter button" library="Eshop_keywords">
+<arguments>
+<arg>${checkbox_color_white}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${filter}</arg>
+</arguments>
+<status status="PASS" starttime="20181118 21:56:09.811" endtime="20181118 21:56:09.827"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${filter}</arg>
+</arguments>
+<msg timestamp="20181118 21:56:09.828" level="INFO">Clicking button 'id=layered_id_attribute_group_8'.</msg>
+<status status="PASS" starttime="20181118 21:56:09.827" endtime="20181118 21:56:09.901"></status>
+</kw>
+<status status="PASS" starttime="20181118 21:56:09.810" endtime="20181118 21:56:09.902"></status>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>${checkbox_availability_available}</arg>
+</arguments>
+<msg timestamp="20181118 21:56:09.904" level="INFO">Selecting checkbox 'id=layered_quantity_1'.</msg>
+<status status="PASS" starttime="20181118 21:56:09.903" endtime="20181118 21:56:10.015"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Showing 1 - 2 of 2 items</arg>
+</arguments>
+<status status="PASS" starttime="20181118 21:56:10.016" endtime="20181118 21:56:12.030"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Showing 1 - 2 of 2 items</arg>
+</arguments>
+<msg timestamp="20181118 21:56:12.046" level="INFO">Current page contains text 'Showing 1 - 2 of 2 items'.</msg>
+<status status="PASS" starttime="20181118 21:56:12.032" endtime="20181118 21:56:12.047"></status>
+</kw>
+<kw name="Sort by price desc" library="Eshop_keywords">
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${dropdown_sort}</arg>
+<arg>price:desc</arg>
+</arguments>
+<msg timestamp="20181118 21:56:12.048" level="INFO">Selecting options from selection list 'id=selectProductSort' by value price:desc.</msg>
+<status status="PASS" starttime="20181118 21:56:12.047" endtime="20181118 21:56:12.149"></status>
+</kw>
+<status status="PASS" starttime="20181118 21:56:12.047" endtime="20181118 21:56:12.150"></status>
+</kw>
+<status status="PASS" starttime="20181118 21:55:59.465" endtime="20181118 21:56:12.151" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20181118 21:55:59.074" endtime="20181118 21:56:12.154"></status>
+</suite>
+<status status="PASS" starttime="20181118 21:55:59.042" endtime="20181118 21:56:12.159"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Homework 4">Homework 4</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Eshop women">Homework 4.Eshop women</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

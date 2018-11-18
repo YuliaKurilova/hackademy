@@ -1,0 +1,20 @@
+*** Settings ***
+Library    SeleniumLibrary 
+Variables    ../Objects/Eshop_objects.py   
+*** Keywords ***
+Go to women category
+    Click Link    ${link_women_category}
+Sort by price asc
+    Select From List By Value    ${dropdown_sort}    price:asc
+Sort by price desc
+    Select From List By Value    ${dropdown_sort}    price:desc
+Sort by name asc
+    Select From List By Value    ${dropdown_sort}    name:asc
+Sort by name desc
+    Select From List By Value    ${dropdown_sort}    name:desc
+Click color filter button
+    [Arguments]    ${filter}
+    Wait Until Page Contains Element    ${filter}    
+    Click Button    ${filter}
+
+    
